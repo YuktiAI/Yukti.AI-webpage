@@ -111,30 +111,56 @@ window.addEventListener('scroll', () => {
 });
 backToTop.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
 
-// ── Contact Form (sends email to yuktiaisolutions@gmail.com) ──
-function handleFormSubmit(e) {
+// ── Contact Form (sends via Web3Forms to yuktiaisolutions@gmail.com) ──
+async function handleFormSubmit(e) {
   e.preventDefault();
-  const name = document.getElementById('name').value.trim();
-  const email = document.getElementById('email').value.trim();
-  const phone = document.getElementById('phone').value.trim();
-  const message = document.getElementById('message').value.trim();
+  const form = e.target;
+  const submitBtn = document.getElementById('submitBtn');
+  const btnText = submitBtn.querySelector('.btn-text');
+  const btnLoading = submitBtn.querySelector('.btn-loading');
+  const successMsg = document.getElementById('formSuccess');
 
-  const subject = encodeURIComponent('Free Consultation Request from ' + name);
-  const body = encodeURIComponent(
-    'Name: ' + name + '\n' +
-    'Email: ' + email + '\n' +
-    'Phone: ' + phone + '\n\n' +
-    'Message:\n' + message
-  );
+  btnText.style.display = 'none';
+  btnLoading.style.display = 'inline';
+  submitBtn.disabled = true;
 
-  // Open email client
-  window.location.href = 'mailto:yuktiaisolutions@gmail.com?subject=' + subject + '&body=' + body;
+  try {
+    const formData = new FormData(form);
+    formData.append('access_key', 'c760839c-bd7f-4a83-9a0d-5e637edbf7f2');
+    const response = await fetch('https://api.web3forms.com/submit', {
+      method: 'POST',
+      body: formData
+    });
+    const result = await response.json();
 
-  // Show success message
-  const ok = document.getElementById('formSuccess');
-  ok.style.display = 'block';
-  document.getElementById('contactForm').reset();
-  setTimeout(() => { ok.style.display = 'none'; }, 5000);
+    if (result.success) {
+      successMsg.textContent = 'Thank you! We\'ll get back to you soon.';
+      successMsg.style.background = '';
+      successMsg.style.borderColor = '';
+      successMsg.style.color = '';
+      successMsg.style.display = 'block';
+      form.reset();
+      setTimeout(() => { successMsg.style.display = 'none'; }, 5000);
+    } else {
+      successMsg.textContent = 'Something went wrong. Please try again.';
+      successMsg.style.background = 'rgba(231,111,81,.1)';
+      successMsg.style.borderColor = 'rgba(231,111,81,.3)';
+      successMsg.style.color = '#c0392b';
+      successMsg.style.display = 'block';
+      setTimeout(() => {
+        successMsg.style.display = 'none';
+        successMsg.style.background = '';
+        successMsg.style.borderColor = '';
+        successMsg.style.color = '';
+      }, 5000);
+    }
+  } catch (error) {
+    alert('Network error. Please check your internet connection and try again.');
+  } finally {
+    btnText.style.display = 'inline';
+    btnLoading.style.display = 'none';
+    submitBtn.disabled = false;
+  }
 }
 
 // ── Smooth Scroll ──

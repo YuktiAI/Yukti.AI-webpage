@@ -2,699 +2,718 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Yukti.AI — Empowering Businesses with Intelligent Software Solutions</title>
-  <meta name="description" content="Yukti.AI delivers AI-driven systems for smarter operations and digital growth." />
-  <link rel="icon" type="image/png" href="favicon.png" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap"
-    rel="stylesheet" />
-  <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yukti.AI — Empowering Businesses with Intelligent Software Solutions</title>
+    <meta name="description" content="Yukti.AI delivers AI-driven systems for smarter operations and digital growth." />
+    <link rel="icon" type="image/png" href="favicon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
 
-  <canvas id="particleCanvas"></canvas>
+    <canvas id="particleCanvas"></canvas>
 
-  <!-- NAVBAR -->
-  <header class="navbar" id="navbar">
-    <div class="nav-inner">
-      <a href="#home" class="nav-logo">
-        <div class="logo-icon">
-          <img src="favicon.png" alt="Yukti.AI Logo" width="36" height="36" />
-        </div>
-        <div class="logo-text-group">
-          <span class="logo-text">Yukti.AI</span>
-          <span class="logo-tagline">Algoridma-Adhisthitam Ananta-Jnana-Patham</span>
-        </div>
-      </a>
-      <nav class="nav-links" id="navLinks">
-        <a href="#home" class="nav-link">Home</a>
-        <a href="#services" class="nav-link">Services</a>
-        <a href="#industries" class="nav-link">Industries</a>
-        <a href="#usecases" class="nav-link">Use Cases</a>
-        <a href="#contact" class="nav-link">Contact</a>
-      </nav>
-      <div class="nav-actions">
-        <a href="#contact" class="btn-primary ripple-btn">Get a Free Consultation</a>
-        <a href="#contact" class="btn-secondary ripple-btn">Talk to Us</a>
-      </div>
-      <button class="hamburger" id="hamburger" aria-label="Toggle menu"><span></span><span></span><span></span></button>
-    </div>
-  </header>
-
-  <!-- HERO -->
-  <section class="hero" id="home">
-    <div class="hero-bg"></div>
-    <div class="hero-content fade-in">
-      <div class="hero-ornament">
-        <svg viewBox="0 0 120 40" width="120" fill="none">
-          <path d="M0 20 Q30 5 60 20 Q90 35 120 20" stroke="#8a9fd0" stroke-width="1.5" fill="none" opacity="0.6" />
-          <circle cx="0" cy="20" r="3" fill="#8a9fd0" opacity="0.5" />
-          <circle cx="60" cy="20" r="4" fill="#8a9fd0" opacity="0.6" />
-          <circle cx="120" cy="20" r="3" fill="#8a9fd0" opacity="0.5" />
-        </svg>
-      </div>
-      <div class="hero-badge"><span class="badge-icon">&#10022;</span> AI-Powered Innovation</div>
-      <h1 class="hero-title">Empowering Businesses<br />with <span class="gradient-text">Intelligent
-          Software</span><br />Solutions</h1>
-      <p class="hero-subtitle">AI-driven systems for smarter operations and digital growth</p>
-      <div class="hero-ctas">
-        <a href="#services" class="btn-hero-primary ripple-btn">Explore Solutions &#8594;</a>
-        <a href="#contact" class="btn-hero-secondary ripple-btn">Get a Free Consultation</a>
-      </div>
-    </div>
-    <div class="hero-scroll-indicator">
-      <div class="scroll-dot"></div>
-    </div>
-  </section>
-
-  <!-- TRUST BAR -->
-  <section class="trust-bar">
-    <p class="trust-label">TRUSTED BY BUSINESSES ACROSS INDIA</p>
-    <div class="trust-icons">
-      <span class="trust-pill"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--navy)"
-          stroke-width="1.8">
-          <rect x="3" y="3" width="18" height="18" rx="3" />
-          <rect x="7" y="7" width="10" height="10" rx="2" />
-          <circle cx="12" cy="12" r="2" />
-        </svg> Enterprise</span>
-      <span class="trust-pill"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--navy)"
-          stroke-width="1.8">
-          <path
-            d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83" />
-          <circle cx="12" cy="12" r="4" />
-        </svg> Healthcare</span>
-      <span class="trust-pill"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--navy)"
-          stroke-width="1.8">
-          <path d="M4 19V5a2 2 0 012-2h8l6 6v10a2 2 0 01-2 2H6a2 2 0 01-2-2z" />
-          <polyline points="14 3 14 9 20 9" />
-        </svg> Education</span>
-      <span class="trust-pill"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--navy)"
-          stroke-width="1.8">
-          <path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z" />
-          <line x1="3" y1="6" x2="21" y2="6" />
-          <path d="M16 10a4 4 0 01-8 0" />
-        </svg> E-Commerce</span>
-      <span class="trust-pill"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--navy)"
-          stroke-width="1.8">
-          <polygon points="12 2 20 7 20 17 12 22 4 17 4 7" />
-          <line x1="12" y1="2" x2="12" y2="22" />
-          <line x1="20" y1="7" x2="4" y2="17" />
-          <line x1="4" y1="7" x2="20" y2="17" />
-        </svg> FinTech</span>
-      <span class="trust-pill"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--navy)"
-          stroke-width="1.8">
-          <path d="M12 22c-4-4-8-8-8-12a8 8 0 0116 0c0 4-4 8-8 12z" />
-          <path d="M12 2v8" />
-          <path d="M8 6c2 2 6 2 8 0" />
-        </svg> Agriculture</span>
-    </div>
-  </section>
-
-  <!-- WHY YUKTI.AI -->
-  <section class="why-section section" id="why">
-    <div class="container">
-      <p class="section-tag">WHY YUKTI.AI</p>
-      <h2 class="section-title">Powering India's AI-first future</h2>
-      <div class="why-grid">
-        <div class="why-visual">
-          <div class="why-card-visual">
-            <img src="yukti-logo.png" alt="Yukti.AI Logo"
-              style="width:100%;height:100%;object-fit:cover;border-radius:32px;" />
-          </div>
-        </div>
-        <div class="why-list">
-          <div class="why-item fade-in-scroll">
-            <div class="why-icon">&#10022;</div>
-            <div>
-              <h3>Tailored by Design</h3>
-              <p>Tailored business solutions designed for your specific needs, industry, and scale.</p>
+    <!-- NAVBAR -->
+    <header class="navbar" id="navbar">
+        <div class="nav-inner">
+            <a href="#home" class="nav-logo">
+                <div class="logo-icon">
+                    <img src="favicon.png" alt="Yukti.AI Logo" width="36" height="36" />
+                </div>
+                <div class="logo-text-group">
+                    <span class="logo-text">Yukti.AI</span>
+                    <span class="logo-tagline">Algoridma-Adhisthitam Ananta-Jnana-Patham</span>
+                </div>
+            </a>
+            <nav class="nav-links" id="navLinks">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#services" class="nav-link">Services</a>
+                <a href="#industries" class="nav-link">Industries</a>
+                <a href="#usecases" class="nav-link">Use Cases</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </nav>
+            <div class="nav-actions">
+                <a href="#contact" class="btn-primary ripple-btn">Get a Free Consultation</a>
+                <a href="#contact" class="btn-secondary ripple-btn">Talk to Us</a>
             </div>
-          </div>
-          <div class="why-item fade-in-scroll">
-            <div class="why-icon">&#10022;</div>
-            <div>
-              <h3>End-to-End Delivery</h3>
-              <p>End-to-end development &amp; deployment with ongoing support and maintenance.</p>
+            <button class="hamburger" id="hamburger"
+                aria-label="Toggle menu"><span></span><span></span><span></span></button>
+        </div>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero" id="home">
+        <div class="hero-bg"></div>
+        <div class="hero-content fade-in">
+            <div class="hero-ornament">
+                <svg viewBox="0 0 120 40" width="120" fill="none">
+                    <path d="M0 20 Q30 5 60 20 Q90 35 120 20" stroke="#8a9fd0" stroke-width="1.5" fill="none"
+                        opacity="0.6" />
+                    <circle cx="0" cy="20" r="3" fill="#8a9fd0" opacity="0.5" />
+                    <circle cx="60" cy="20" r="4" fill="#8a9fd0" opacity="0.6" />
+                    <circle cx="120" cy="20" r="3" fill="#8a9fd0" opacity="0.5" />
+                </svg>
             </div>
-          </div>
-          <div class="why-item fade-in-scroll">
-            <div class="why-icon">&#10022;</div>
-            <div>
-              <h3>Built to Scale</h3>
-              <p>Scalable and secure systems built on best practices and modern architecture.</p>
+            <div class="hero-badge"><span class="badge-icon">&#10022;</span> AI-Powered Innovation</div>
+            <h1 class="hero-title">Empowering Businesses<br />with <span class="gradient-text">Intelligent
+                    Software</span><br />Solutions</h1>
+            <p class="hero-subtitle">AI-driven systems for smarter operations and digital growth</p>
+            <div class="hero-ctas">
+                <a href="#services" class="btn-hero-primary ripple-btn">Explore Solutions &#8594;</a>
+                <a href="#contact" class="btn-hero-secondary ripple-btn">Get a Free Consultation</a>
             </div>
-          </div>
-          <div class="why-item fade-in-scroll">
-            <div class="why-icon">&#10022;</div>
-            <div>
-              <h3>Proven Expertise</h3>
-              <p>Cross-industry expertise across 9+ sectors with real-world proven solutions.</p>
+        </div>
+        <div class="hero-scroll-indicator">
+            <div class="scroll-dot"></div>
+        </div>
+    </section>
+
+    <!-- TRUST BAR -->
+    <section class="trust-bar">
+        <p class="trust-label">TRUSTED BY BUSINESSES ACROSS INDIA</p>
+        <div class="trust-icons">
+            <span class="trust-pill"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--navy)"
+                    stroke-width="1.8">
+                    <rect x="3" y="3" width="18" height="18" rx="3" />
+                    <rect x="7" y="7" width="10" height="10" rx="2" />
+                    <circle cx="12" cy="12" r="2" />
+                </svg> Enterprise</span>
+            <span class="trust-pill"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--navy)"
+                    stroke-width="1.8">
+                    <path
+                        d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83" />
+                    <circle cx="12" cy="12" r="4" />
+                </svg> Healthcare</span>
+            <span class="trust-pill"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--navy)"
+                    stroke-width="1.8">
+                    <path d="M4 19V5a2 2 0 012-2h8l6 6v10a2 2 0 01-2 2H6a2 2 0 01-2-2z" />
+                    <polyline points="14 3 14 9 20 9" />
+                </svg> Education</span>
+            <span class="trust-pill"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--navy)"
+                    stroke-width="1.8">
+                    <path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z" />
+                    <line x1="3" y1="6" x2="21" y2="6" />
+                    <path d="M16 10a4 4 0 01-8 0" />
+                </svg> E-Commerce</span>
+            <span class="trust-pill"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--navy)"
+                    stroke-width="1.8">
+                    <polygon points="12 2 20 7 20 17 12 22 4 17 4 7" />
+                    <line x1="12" y1="2" x2="12" y2="22" />
+                    <line x1="20" y1="7" x2="4" y2="17" />
+                    <line x1="4" y1="7" x2="20" y2="17" />
+                </svg> FinTech</span>
+            <span class="trust-pill"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--navy)"
+                    stroke-width="1.8">
+                    <path d="M12 22c-4-4-8-8-8-12a8 8 0 0116 0c0 4-4 8-8 12z" />
+                    <path d="M12 2v8" />
+                    <path d="M8 6c2 2 6 2 8 0" />
+                </svg> Agriculture</span>
+        </div>
+    </section>
+
+    <!-- WHY YUKTI.AI -->
+    <section class="why-section section" id="why">
+        <div class="container">
+            <p class="section-tag">WHY YUKTI.AI</p>
+            <h2 class="section-title">Powering India's AI-first future</h2>
+            <div class="why-grid">
+                <div class="why-visual">
+                    <div class="why-card-visual">
+                        <img src="yukti-logo.png" alt="Yukti.AI Logo"
+                            style="width:100%;height:100%;object-fit:cover;border-radius:32px;" />
+                    </div>
+                </div>
+                <div class="why-list">
+                    <div class="why-item fade-in-scroll">
+                        <div class="why-icon">&#10022;</div>
+                        <div>
+                            <h3>Tailored by Design</h3>
+                            <p>Tailored business solutions designed for your specific needs, industry, and scale.</p>
+                        </div>
+                    </div>
+                    <div class="why-item fade-in-scroll">
+                        <div class="why-icon">&#10022;</div>
+                        <div>
+                            <h3>End-to-End Delivery</h3>
+                            <p>End-to-end development &amp; deployment with ongoing support and maintenance.</p>
+                        </div>
+                    </div>
+                    <div class="why-item fade-in-scroll">
+                        <div class="why-icon">&#10022;</div>
+                        <div>
+                            <h3>Built to Scale</h3>
+                            <p>Scalable and secure systems built on best practices and modern architecture.</p>
+                        </div>
+                    </div>
+                    <div class="why-item fade-in-scroll">
+                        <div class="why-icon">&#10022;</div>
+                        <div>
+                            <h3>Proven Expertise</h3>
+                            <p>Cross-industry expertise across 9+ sectors with real-world proven solutions.</p>
+                        </div>
+                    </div>
+                    <div class="why-item fade-in-scroll">
+                        <div class="why-icon">&#10022;</div>
+                        <div>
+                            <h3>AI-First Mindset</h3>
+                            <p>AI-first design and development mindset baked into every solution we build.</p>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
-          <div class="why-item fade-in-scroll">
-            <div class="why-icon">&#10022;</div>
-            <div>
-              <h3>AI-First Mindset</h3>
-              <p>AI-first design and development mindset baked into every solution we build.</p>
+        </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section class="services-section section" id="services">
+        <div class="container">
+            <p class="section-tag">FOR ENTERPRISE | STARTUPS | DEVELOPERS</p>
+            <h2 class="section-title">India's Full-stack AI Software Platform</h2>
+            <p class="section-subtitle">Comprehensive AI and software solutions for modern businesses</p>
+            <div class="services-grid">
+                <div class="service-card fade-in-scroll tilt-card" data-modal="erp">
+                    <div class="service-icon-wrap orange"><svg width="28" height="28" viewBox="0 0 24 24" fill="white">
+                            <path
+                                d="M20 3H4C2.9 3 2 3.9 2 5v14c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-9 14H5v-2h6v2zm4-4H5v-2h10v2zm0-4H5V7h10v2z" />
+                        </svg></div>
+                    <h3>ERP System Development</h3>
+                    <p>Automate business workflows and optimize enterprise resource management.</p>
+                    <button class="learn-more-btn ripple-btn">Learn More &#8594;</button>
+                </div>
+                <div class="service-card fade-in-scroll featured tilt-card" data-modal="crm">
+                    <div class="service-icon-wrap purple"><svg width="28" height="28" viewBox="0 0 24 24" fill="white">
+                            <path
+                                d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5C15 14.17 10.33 13 8 13zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z" />
+                        </svg></div>
+                    <h3>CRM System Development</h3>
+                    <p>Build intelligent systems to manage and analyze customer relationships.</p>
+                    <button class="learn-more-btn ripple-btn">Learn More &#8594;</button>
+                </div>
+                <div class="service-card fade-in-scroll tilt-card" data-modal="billing">
+                    <div class="service-icon-wrap blue"><svg width="28" height="28" viewBox="0 0 24 24" fill="white">
+                            <path
+                                d="M20 4H4c-1.11 0-2 .89-2 2v12c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V6c0-1.11-.89-2-2-2zm0 14H4v-6h16v6zm0-10H4V6h16v2z" />
+                        </svg></div>
+                    <h3>Billing &amp; Invoicing Systems</h3>
+                    <p>Simplify transactions and automate billing processes for your business.</p>
+                    <button class="learn-more-btn ripple-btn">Learn More &#8594;</button>
+                </div>
+                <div class="service-card fade-in-scroll tilt-card" data-modal="web">
+                    <div class="service-icon-wrap teal"><svg width="28" height="28" viewBox="0 0 24 24" fill="white">
+                            <path
+                                d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z" />
+                        </svg></div>
+                    <h3>Web Development</h3>
+                    <p>Create high-performance, responsive, and SEO-optimized web solutions.</p>
+                    <button class="learn-more-btn ripple-btn">Learn More &#8594;</button>
+                </div>
+                <div class="service-card fade-in-scroll tilt-card" data-modal="aiagent">
+                    <div class="service-icon-wrap indigo"><svg width="28" height="28" viewBox="0 0 24 24" fill="white">
+                            <path
+                                d="M20 9V7c0-1.1-.9-2-2-2h-3c0-1.66-1.34-3-3-3S9 3.34 9 5H6c-1.1 0-2 .9-2 2v2c-1.66 0-3 1.34-3 3s1.34 3 3 3v4c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2v-4c1.66 0 3-1.34 3-3s-1.34-3-3-3zM7.5 11.5c0-.83.67-1.5 1.5-1.5s1.5.67 1.5 1.5S9.83 13 9 13s-1.5-.67-1.5-1.5zm7.5 6.5H9v-2h6v2zm-.5-5c-.83 0-1.5-.67-1.5-1.5S13.67 10 14.5 10s1.5.67 1.5 1.5S15.33 13 14.5 13z" />
+                        </svg></div>
+                    <h3>AI Agent Development</h3>
+                    <p>Custom AI chatbots and intelligent automation for your business workflows.</p>
+                    <button class="learn-more-btn ripple-btn">Learn More &#8594;</button>
+                </div>
+                <div class="service-card fade-in-scroll tilt-card" data-modal="ecom">
+                    <div class="service-icon-wrap rose"><svg width="28" height="28" viewBox="0 0 24 24" fill="white">
+                            <path
+                                d="M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zM1 2v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96C5 16.1 6.9 18 9 18h12v-2H9.42c-.14 0-.25-.11-.25-.25l.03-.12.9-1.63H19c.75 0 1.41-.41 1.75-1.03l3.58-6.49A1 1 0 0023.45 5H5.21l-.94-2H1zm16 16c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2z" />
+                        </svg></div>
+                    <h3>E-Commerce System Development</h3>
+                    <p>Scalable e-commerce platforms with analytics and smart recommendations.</p>
+                    <button class="learn-more-btn ripple-btn">Learn More &#8594;</button>
+                </div>
+                <div class="service-card fade-in-scroll tilt-card" data-modal="dashboard">
+                    <div class="service-icon-wrap orange"><svg width="28" height="28" viewBox="0 0 24 24" fill="white">
+                            <path d="M3 13h8V3H3v10zm0 8h8v-6H3v6zm10 0h8V11h-8v10zm0-18v6h8V3h-8z" />
+                        </svg></div>
+                    <h3>Dashboard &amp; Software Solutions</h3>
+                    <p>Advanced dashboards with real-time analytics and business intelligence insights.</p>
+                    <button class="learn-more-btn ripple-btn">Learn More &#8594;</button>
+                </div>
+                <div class="service-card fade-in-scroll tilt-card" data-modal="matrimony">
+                    <div class="service-icon-wrap pink"><svg width="28" height="28" viewBox="0 0 24 24" fill="white">
+                            <path
+                                d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
+                        </svg></div>
+                    <h3>Wedding Matrimony Platforms</h3>
+                    <p>Smart matchmaking systems with recommendation algorithms and intelligent filtering.</p>
+                    <button class="learn-more-btn ripple-btn">Learn More &#8594;</button>
+                </div>
+                <div class="service-card fade-in-scroll tilt-card" data-modal="recsys">
+                    <div class="service-icon-wrap purple"><svg width="28" height="28" viewBox="0 0 24 24" fill="white">
+                            <path
+                                d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" />
+                        </svg></div>
+                    <h3>Recommendation Systems</h3>
+                    <p>Personalized recommendation engines for digital platforms and e-commerce.</p>
+                    <button class="learn-more-btn ripple-btn">Learn More &#8594;</button>
+                </div>
             </div>
-          </div>
         </div>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- SERVICES -->
-  <section class="services-section section" id="services">
-    <div class="container">
-      <p class="section-tag">FOR ENTERPRISE | STARTUPS | DEVELOPERS</p>
-      <h2 class="section-title">India's Full-stack AI Software Platform</h2>
-      <p class="section-subtitle">Comprehensive AI and software solutions for modern businesses</p>
-      <div class="services-grid">
-        <div class="service-card fade-in-scroll tilt-card" data-modal="erp">
-          <div class="service-icon-wrap orange"><svg width="28" height="28" viewBox="0 0 24 24" fill="white">
-              <path
-                d="M20 3H4C2.9 3 2 3.9 2 5v14c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-9 14H5v-2h6v2zm4-4H5v-2h10v2zm0-4H5V7h10v2z" />
-            </svg></div>
-          <h3>ERP System Development</h3>
-          <p>Automate business workflows and optimize enterprise resource management.</p>
-          <button class="learn-more-btn ripple-btn">Learn More &#8594;</button>
-        </div>
-        <div class="service-card fade-in-scroll featured tilt-card" data-modal="crm">
-          <div class="service-icon-wrap purple"><svg width="28" height="28" viewBox="0 0 24 24" fill="white">
-              <path
-                d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5C15 14.17 10.33 13 8 13zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z" />
-            </svg></div>
-          <h3>CRM System Development</h3>
-          <p>Build intelligent systems to manage and analyze customer relationships.</p>
-          <button class="learn-more-btn ripple-btn">Learn More &#8594;</button>
-        </div>
-        <div class="service-card fade-in-scroll tilt-card" data-modal="billing">
-          <div class="service-icon-wrap blue"><svg width="28" height="28" viewBox="0 0 24 24" fill="white">
-              <path
-                d="M20 4H4c-1.11 0-2 .89-2 2v12c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V6c0-1.11-.89-2-2-2zm0 14H4v-6h16v6zm0-10H4V6h16v2z" />
-            </svg></div>
-          <h3>Billing &amp; Invoicing Systems</h3>
-          <p>Simplify transactions and automate billing processes for your business.</p>
-          <button class="learn-more-btn ripple-btn">Learn More &#8594;</button>
-        </div>
-        <div class="service-card fade-in-scroll tilt-card" data-modal="web">
-          <div class="service-icon-wrap teal"><svg width="28" height="28" viewBox="0 0 24 24" fill="white">
-              <path
-                d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z" />
-            </svg></div>
-          <h3>Web Development</h3>
-          <p>Create high-performance, responsive, and SEO-optimized web solutions.</p>
-          <button class="learn-more-btn ripple-btn">Learn More &#8594;</button>
-        </div>
-        <div class="service-card fade-in-scroll tilt-card" data-modal="aiagent">
-          <div class="service-icon-wrap indigo"><svg width="28" height="28" viewBox="0 0 24 24" fill="white">
-              <path
-                d="M20 9V7c0-1.1-.9-2-2-2h-3c0-1.66-1.34-3-3-3S9 3.34 9 5H6c-1.1 0-2 .9-2 2v2c-1.66 0-3 1.34-3 3s1.34 3 3 3v4c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2v-4c1.66 0 3-1.34 3-3s-1.34-3-3-3zM7.5 11.5c0-.83.67-1.5 1.5-1.5s1.5.67 1.5 1.5S9.83 13 9 13s-1.5-.67-1.5-1.5zm7.5 6.5H9v-2h6v2zm-.5-5c-.83 0-1.5-.67-1.5-1.5S13.67 10 14.5 10s1.5.67 1.5 1.5S15.33 13 14.5 13z" />
-            </svg></div>
-          <h3>AI Agent Development</h3>
-          <p>Custom AI chatbots and intelligent automation for your business workflows.</p>
-          <button class="learn-more-btn ripple-btn">Learn More &#8594;</button>
-        </div>
-        <div class="service-card fade-in-scroll tilt-card" data-modal="ecom">
-          <div class="service-icon-wrap rose"><svg width="28" height="28" viewBox="0 0 24 24" fill="white">
-              <path
-                d="M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zM1 2v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96C5 16.1 6.9 18 9 18h12v-2H9.42c-.14 0-.25-.11-.25-.25l.03-.12.9-1.63H19c.75 0 1.41-.41 1.75-1.03l3.58-6.49A1 1 0 0023.45 5H5.21l-.94-2H1zm16 16c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2z" />
-            </svg></div>
-          <h3>E-Commerce System Development</h3>
-          <p>Scalable e-commerce platforms with analytics and smart recommendations.</p>
-          <button class="learn-more-btn ripple-btn">Learn More &#8594;</button>
-        </div>
-        <div class="service-card fade-in-scroll tilt-card" data-modal="dashboard">
-          <div class="service-icon-wrap orange"><svg width="28" height="28" viewBox="0 0 24 24" fill="white">
-              <path d="M3 13h8V3H3v10zm0 8h8v-6H3v6zm10 0h8V11h-8v10zm0-18v6h8V3h-8z" />
-            </svg></div>
-          <h3>Dashboard &amp; Software Solutions</h3>
-          <p>Advanced dashboards with real-time analytics and business intelligence insights.</p>
-          <button class="learn-more-btn ripple-btn">Learn More &#8594;</button>
-        </div>
-        <div class="service-card fade-in-scroll tilt-card" data-modal="matrimony">
-          <div class="service-icon-wrap pink"><svg width="28" height="28" viewBox="0 0 24 24" fill="white">
-              <path
-                d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
-            </svg></div>
-          <h3>Wedding Matrimony Platforms</h3>
-          <p>Smart matchmaking systems with recommendation algorithms and intelligent filtering.</p>
-          <button class="learn-more-btn ripple-btn">Learn More &#8594;</button>
-        </div>
-        <div class="service-card fade-in-scroll tilt-card" data-modal="recsys">
-          <div class="service-icon-wrap purple"><svg width="28" height="28" viewBox="0 0 24 24" fill="white">
-              <path
-                d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" />
-            </svg></div>
-          <h3>Recommendation Systems</h3>
-          <p>Personalized recommendation engines for digital platforms and e-commerce.</p>
-          <button class="learn-more-btn ripple-btn">Learn More &#8594;</button>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- INDUSTRIES -->
-  <section class="industries-section section" id="industries">
-    <div class="container">
-      <p class="section-tag">INDUSTRIES WE SERVE</p>
-      <h2 class="section-title">Delivering intelligent solutions<br />across diverse sectors</h2>
-      <div class="industries-grid">
-        <div class="industry-card fade-in-scroll">
-          <div class="ind-icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--navy)"
-              stroke-width="1.6" stroke-linecap="round">
-              <rect x="2" y="6" width="20" height="12" rx="2" />
-              <path d="M6 10h2M6 14h2M10 10h8M10 14h5" />
-              <circle cx="18" cy="12" r="2" fill="rgba(79,123,189,0.15)" />
-            </svg></div>
-          <span>Information Technology</span>
-        </div>
-        <div class="industry-card fade-in-scroll">
-          <div class="ind-icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--navy)"
-              stroke-width="1.6" stroke-linecap="round">
-              <path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z" />
-              <line x1="3" y1="6" x2="21" y2="6" />
-              <path d="M16 10a4 4 0 01-8 0" />
-            </svg></div>
-          <span>E-Commerce &amp; Retail</span>
-        </div>
-        <div class="industry-card fade-in-scroll">
-          <div class="ind-icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--navy)"
-              stroke-width="1.6" stroke-linecap="round">
-              <path
-                d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83" />
-              <circle cx="12" cy="12" r="4" />
-            </svg></div>
-          <span>Healthcare &amp; Wellness</span>
-        </div>
-        <div class="industry-card fade-in-scroll">
-          <div class="ind-icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--navy)"
-              stroke-width="1.6" stroke-linecap="round">
-              <path d="M4 19.5V5a2 2 0 012-2h8l5 5v11.5" />
-              <polyline points="14 3 14 8 19 8" />
-              <path d="M8 13h8M8 17h5" />
-            </svg></div>
-          <span>Education &amp; E-Learning</span>
-        </div>
-        <div class="industry-card fade-in-scroll">
-          <div class="ind-icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--navy)"
-              stroke-width="1.6" stroke-linecap="round">
-              <polygon points="12 2 20 7 20 17 12 22 4 17 4 7" />
-              <line x1="12" y1="2" x2="12" y2="22" />
-              <line x1="20" y1="7" x2="4" y2="17" />
-              <line x1="4" y1="7" x2="20" y2="17" />
-            </svg></div>
-          <span>Finance &amp; FinTech</span>
-        </div>
-        <div class="industry-card fade-in-scroll">
-          <div class="ind-icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--navy)"
-              stroke-width="1.6" stroke-linecap="round">
-              <circle cx="12" cy="12" r="10" />
-              <path d="M2 12h20" />
-              <path d="M12 2a15 15 0 014 20 15 15 0 01-8 0 15 15 0 014-20z" />
-            </svg></div>
-          <span>Travel &amp; Hospitality</span>
-        </div>
-        <div class="industry-card fade-in-scroll">
-          <div class="ind-icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--navy)"
-              stroke-width="1.6" stroke-linecap="round">
-              <path d="M3 21h18M5 21V7l7-4 7 4v14" />
-              <rect x="9" y="13" width="6" height="8" />
-              <rect x="9" y="9" width="2" height="2" />
-              <rect x="13" y="9" width="2" height="2" />
-            </svg></div>
-          <span>Real Estate &amp; Infrastructure</span>
-        </div>
-        <div class="industry-card fade-in-scroll">
-          <div class="ind-icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--navy)"
-              stroke-width="1.6" stroke-linecap="round">
-              <path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 00-2.91-.09z" />
-              <path
-                d="M12 15l-3-3a22 22 0 012-3.95A12.88 12.88 0 0122 2c0 2.72-.78 7.5-6 11.19A22.35 22.35 0 0112 15z" />
-              <path d="M9 12H4s.55-3.03 2-4.5M12 15v5s3.03-.55 4.5-2" />
-            </svg></div>
-          <span>Startups &amp; SMEs</span>
-        </div>
-        <div class="industry-card fade-in-scroll">
-          <div class="ind-icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--navy)"
-              stroke-width="1.6" stroke-linecap="round">
-              <path d="M12 22c-4-4-8-8-8-12a8 8 0 0116 0c0 4-4 8-8 12z" />
-              <path d="M12 2v8M8 6c2 2 6 2 8 0" />
-              <circle cx="12" cy="12" r="1" fill="var(--navy)" />
-            </svg></div>
-          <span>Agriculture &amp; Horticulture</span>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- USE CASES -->
-  <section class="usecases-section section" id="usecases">
-    <div class="container">
-      <p class="section-tag">USE CASES</p>
-      <h2 class="section-title">See it in action</h2>
-      <p class="section-subtitle">Real-world applications of our AI solutions</p>
-      <div class="usecases-tabs">
-        <button class="tab-btn active ripple-btn" data-tab="rec">AI Recommendation</button>
-        <button class="tab-btn ripple-btn" data-tab="crm">CRM Workflows</button>
-        <button class="tab-btn ripple-btn" data-tab="erp">Smart ERP</button>
-        <button class="tab-btn ripple-btn" data-tab="bi">BI Dashboards</button>
-      </div>
-      <div class="usecase-display">
-        <div class="usecase-panel active" id="tab-rec">
-          <div class="usecase-visual orange-grad">
-            <svg width="64" height="64" viewBox="0 0 48 48" fill="none" stroke="white" stroke-width="2"
-              stroke-linecap="round">
-              <circle cx="24" cy="24" r="18" />
-              <circle cx="24" cy="24" r="12" />
-              <circle cx="24" cy="24" r="6" />
-              <circle cx="24" cy="24" r="2" fill="white" />
-              <line x1="24" y1="6" x2="24" y2="2" />
-              <line x1="24" y1="46" x2="24" y2="42" />
-              <line x1="6" y1="24" x2="2" y2="24" />
-              <line x1="46" y1="24" x2="42" y2="24" />
-            </svg>
-          </div>
-          <div class="usecase-info"><span class="uc-live">&#9679; LIVE</span>
-            <h3>AI-driven Recommendation Engines</h3>
-            <p>Boost sales and engagement with personalized product recommendations powered by machine learning. Our
-              recommendation engines analyze user behavior, purchase patterns, and preferences to deliver
-              hyper-personalized experiences that drive conversion and retention.</p><a href="#contact"
-              class="btn-primary ripple-btn mt-12">Know More &#8594;</a>
-          </div>
-        </div>
-        <div class="usecase-panel" id="tab-crm">
-          <div class="usecase-visual purple-grad">
-            <svg width="64" height="64" viewBox="0 0 48 48" fill="none" stroke="white" stroke-width="2"
-              stroke-linecap="round">
-              <circle cx="16" cy="16" r="6" />
-              <circle cx="32" cy="16" r="6" />
-              <circle cx="24" cy="32" r="6" />
-              <line x1="20" y1="20" x2="22" y2="28" />
-              <line x1="28" y1="20" x2="26" y2="28" />
-              <line x1="22" y1="16" x2="26" y2="16" />
-            </svg>
-          </div>
-          <div class="usecase-info"><span class="uc-live">&#9679; LIVE</span>
-            <h3>Automated CRM Workflows</h3>
-            <p>Streamline customer management with predictive analytics and intelligent automation. Our CRM workflows
-              automatically score leads, schedule follow-ups, and surface the right customer data at the right time.</p>
-            <a href="#contact" class="btn-primary ripple-btn mt-12">Know More &#8594;</a>
-          </div>
-        </div>
-        <div class="usecase-panel" id="tab-erp">
-          <div class="usecase-visual blue-grad">
-            <svg width="64" height="64" viewBox="0 0 48 48" fill="none" stroke="white" stroke-width="2"
-              stroke-linecap="round">
-              <rect x="8" y="8" width="32" height="32" rx="4" />
-              <line x1="8" y1="16" x2="40" y2="16" />
-              <line x1="8" y1="24" x2="40" y2="24" />
-              <line x1="8" y1="32" x2="40" y2="32" />
-              <line x1="20" y1="8" x2="20" y2="40" />
-              <line x1="32" y1="8" x2="32" y2="40" />
-            </svg>
-          </div>
-          <div class="usecase-info"><span class="uc-live">&#9679; LIVE</span>
-            <h3>Smart ERP Systems</h3>
-            <p>Optimize operations with decision intelligence built into every workflow. Our ERP systems streamline your
-              entire business process providing real-time insights and automation that reduces manual work by up to 70%.
-            </p><a href="#contact" class="btn-primary ripple-btn mt-12">Know More &#8594;</a>
-          </div>
-        </div>
-        <div class="usecase-panel" id="tab-bi">
-          <div class="usecase-visual teal-grad">
-            <svg width="64" height="64" viewBox="0 0 48 48" fill="none" stroke="white" stroke-width="2"
-              stroke-linecap="round">
-              <rect x="6" y="28" width="8" height="14" rx="1" fill="rgba(255,255,255,0.2)" />
-              <rect x="20" y="18" width="8" height="24" rx="1" fill="rgba(255,255,255,0.2)" />
-              <rect x="34" y="8" width="8" height="34" rx="1" fill="rgba(255,255,255,0.2)" />
-              <polyline points="6 22 20 12 34 6 46 2" stroke-width="2.5" />
-              <circle cx="6" cy="22" r="2" fill="white" />
-              <circle cx="20" cy="12" r="2" fill="white" />
-              <circle cx="34" cy="6" r="2" fill="white" />
-            </svg>
-          </div>
-          <div class="usecase-info"><span class="uc-live">&#9679; LIVE</span>
-            <h3>Business Intelligence Dashboards</h3>
-            <p>Transform data into actionable insights with beautiful real-time dashboards. Track KPIs, monitor
-              operations, and make data-driven decisions with custom analytics solutions built for your business.</p><a
-              href="#contact" class="btn-primary ripple-btn mt-12">Know More &#8594;</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- TECH EXPERTISE -->
-  <section class="tech-section section" id="tech">
-    <div class="container">
-      <p class="section-tag">TECHNOLOGY EXPERTISE</p>
-      <h2 class="section-title">Cutting-edge technologies<br />powering your solutions</h2>
-      <div class="tech-grid">
-        <div class="tech-card fade-in-scroll">
-          <div class="tech-card-icon"><svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="var(--navy)"
-              stroke-width="1.5" stroke-linecap="round">
-              <circle cx="6" cy="6" r="2" />
-              <circle cx="18" cy="6" r="2" />
-              <circle cx="6" cy="18" r="2" />
-              <circle cx="18" cy="18" r="2" />
-              <circle cx="12" cy="12" r="3" fill="rgba(79,123,189,0.15)" />
-              <line x1="8" y1="6" x2="10" y2="10" />
-              <line x1="14" y1="10" x2="16" y2="6" />
-              <line x1="8" y1="18" x2="10" y2="14" />
-              <line x1="14" y1="14" x2="16" y2="18" />
-            </svg></div>
-          <h3>AI &amp; ML</h3>
-          <div class="tech-tags"><span>Python</span><span>TensorFlow</span><span>PyTorch</span><span>Scikit-learn</span>
-          </div>
-        </div>
-        <div class="tech-card fade-in-scroll">
-          <div class="tech-card-icon"><svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="var(--navy)"
-              stroke-width="1.5" stroke-linecap="round">
-              <circle cx="12" cy="12" r="10" />
-              <path d="M2 12h20" />
-              <path d="M12 2a15 15 0 014 20M12 2a15 15 0 00-4 20" />
-            </svg></div>
-          <h3>Web Stack</h3>
-          <div class="tech-tags">
-            <span>React</span><span>Node.js</span><span>Django</span><span>Flask</span><span>Next.js</span>
-          </div>
-        </div>
-        <div class="tech-card fade-in-scroll">
-          <div class="tech-card-icon"><svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="var(--navy)"
-              stroke-width="1.5" stroke-linecap="round">
-              <path d="M18 10h-1.26A8 8 0 109 20h9a5 5 0 000-10z" fill="rgba(79,123,189,0.1)" />
-              <path d="M12 13v5M10 16l2 2 2-2" />
-            </svg></div>
-          <h3>Cloud &amp; DevOps</h3>
-          <div class="tech-tags">
-            <span>AWS</span><span>GCP</span><span>Azure</span><span>Docker</span><span>Kubernetes</span>
-          </div>
-        </div>
-        <div class="tech-card fade-in-scroll">
-          <div class="tech-card-icon"><svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="var(--navy)"
-              stroke-width="1.5" stroke-linecap="round">
-              <ellipse cx="12" cy="6" rx="8" ry="3" />
-              <path d="M4 6v6c0 1.66 3.58 3 8 3s8-1.34 8-3V6" />
-              <path d="M4 12v6c0 1.66 3.58 3 8 3s8-1.34 8-3v-6" />
-            </svg></div>
-          <h3>Databases</h3>
-          <div class="tech-tags"><span>PostgreSQL</span><span>MongoDB</span><span>Firebase</span><span>Redis</span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- TEAM -->
-  <section class="team-section section" id="team">
-    <div class="container">
-      <p class="section-tag">OUR TEAM</p>
-      <h2 class="section-title">Led by experienced entrepreneurs<br />and technologists</h2>
-      <div class="team-grid">
-        <div class="team-card fade-in-scroll">
-          <div class="team-avatar" style="background:linear-gradient(135deg,#6e48aa,#9d50bb);"><span>MSKNA</span></div>
-          <h3>Mr. SampathKumar N A</h3>
-          <p class="team-desc">Experienced Engineer and technologist driving Yukti.AI's vision for AI-powered business
-            transformation.</p>
-          <div class="team-socials"><a href="#" aria-label="LinkedIn"><svg width="18" height="18" viewBox="0 0 24 24"
-                fill="currentColor">
-                <path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-4 0v7h-4v-7a6 6 0 016-6z" />
-                <rect x="2" y="9" width="4" height="12" />
-                <circle cx="4" cy="4" r="2" />
-              </svg></a></div>
-        </div>
-        <div class="team-card fade-in-scroll">
-          <div class="team-avatar" style="background:linear-gradient(135deg,#1a2a6c,#b21f1f);"><span>MNRH</span></div>
-          <h3>Mr. Nitish R Honnali</h3>
-          <p class="team-desc">Full-stack AI engineer leading technical architecture and product development at
-            Yukti.AI.</p>
-          <div class="team-socials"><a href="#" aria-label="LinkedIn"><svg width="18" height="18" viewBox="0 0 24 24"
-                fill="currentColor">
-                <path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-4 0v7h-4v-7a6 6 0 016-6z" />
-                <rect x="2" y="9" width="4" height="12" />
-                <circle cx="4" cy="4" r="2" />
-              </svg></a></div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- CONTACT -->
-  <section class="contact-section section" id="contact">
-    <div class="container">
-      <p class="section-tag">CONTACT US</p>
-      <h2 class="section-title">Ready to transform your business?<br />Let's talk</h2>
-      <div class="contact-wrapper">
-        <div class="contact-info">
-          <div class="contact-info-item">
-            <div class="ci-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--navy)"
-                stroke-width="1.8" stroke-linecap="round">
-                <rect x="2" y="4" width="20" height="16" rx="2" />
-                <polyline points="22 4 12 13 2 4" />
-              </svg></div>
-            <div>
-              <h4>Email</h4><a href="mailto:yuktiaisolutions@gmail.com">yuktiaisolutions@gmail.com</a>
+    <!-- INDUSTRIES -->
+    <section class="industries-section section" id="industries">
+        <div class="container">
+            <p class="section-tag">INDUSTRIES WE SERVE</p>
+            <h2 class="section-title">Delivering intelligent solutions<br />across diverse sectors</h2>
+            <div class="industries-grid">
+                <div class="industry-card fade-in-scroll">
+                    <div class="ind-icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none"
+                            stroke="var(--navy)" stroke-width="1.6" stroke-linecap="round">
+                            <rect x="2" y="6" width="20" height="12" rx="2" />
+                            <path d="M6 10h2M6 14h2M10 10h8M10 14h5" />
+                            <circle cx="18" cy="12" r="2" fill="rgba(79,123,189,0.15)" />
+                        </svg></div>
+                    <span>Information Technology</span>
+                </div>
+                <div class="industry-card fade-in-scroll">
+                    <div class="ind-icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none"
+                            stroke="var(--navy)" stroke-width="1.6" stroke-linecap="round">
+                            <path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z" />
+                            <line x1="3" y1="6" x2="21" y2="6" />
+                            <path d="M16 10a4 4 0 01-8 0" />
+                        </svg></div>
+                    <span>E-Commerce &amp; Retail</span>
+                </div>
+                <div class="industry-card fade-in-scroll">
+                    <div class="ind-icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none"
+                            stroke="var(--navy)" stroke-width="1.6" stroke-linecap="round">
+                            <path
+                                d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83" />
+                            <circle cx="12" cy="12" r="4" />
+                        </svg></div>
+                    <span>Healthcare &amp; Wellness</span>
+                </div>
+                <div class="industry-card fade-in-scroll">
+                    <div class="ind-icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none"
+                            stroke="var(--navy)" stroke-width="1.6" stroke-linecap="round">
+                            <path d="M4 19.5V5a2 2 0 012-2h8l5 5v11.5" />
+                            <polyline points="14 3 14 8 19 8" />
+                            <path d="M8 13h8M8 17h5" />
+                        </svg></div>
+                    <span>Education &amp; E-Learning</span>
+                </div>
+                <div class="industry-card fade-in-scroll">
+                    <div class="ind-icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none"
+                            stroke="var(--navy)" stroke-width="1.6" stroke-linecap="round">
+                            <polygon points="12 2 20 7 20 17 12 22 4 17 4 7" />
+                            <line x1="12" y1="2" x2="12" y2="22" />
+                            <line x1="20" y1="7" x2="4" y2="17" />
+                            <line x1="4" y1="7" x2="20" y2="17" />
+                        </svg></div>
+                    <span>Finance &amp; FinTech</span>
+                </div>
+                <div class="industry-card fade-in-scroll">
+                    <div class="ind-icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none"
+                            stroke="var(--navy)" stroke-width="1.6" stroke-linecap="round">
+                            <circle cx="12" cy="12" r="10" />
+                            <path d="M2 12h20" />
+                            <path d="M12 2a15 15 0 014 20 15 15 0 01-8 0 15 15 0 014-20z" />
+                        </svg></div>
+                    <span>Travel &amp; Hospitality</span>
+                </div>
+                <div class="industry-card fade-in-scroll">
+                    <div class="ind-icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none"
+                            stroke="var(--navy)" stroke-width="1.6" stroke-linecap="round">
+                            <path d="M3 21h18M5 21V7l7-4 7 4v14" />
+                            <rect x="9" y="13" width="6" height="8" />
+                            <rect x="9" y="9" width="2" height="2" />
+                            <rect x="13" y="9" width="2" height="2" />
+                        </svg></div>
+                    <span>Real Estate &amp; Infrastructure</span>
+                </div>
+                <div class="industry-card fade-in-scroll">
+                    <div class="ind-icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none"
+                            stroke="var(--navy)" stroke-width="1.6" stroke-linecap="round">
+                            <path
+                                d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 00-2.91-.09z" />
+                            <path
+                                d="M12 15l-3-3a22 22 0 012-3.95A12.88 12.88 0 0122 2c0 2.72-.78 7.5-6 11.19A22.35 22.35 0 0112 15z" />
+                            <path d="M9 12H4s.55-3.03 2-4.5M12 15v5s3.03-.55 4.5-2" />
+                        </svg></div>
+                    <span>Startups &amp; SMEs</span>
+                </div>
+                <div class="industry-card fade-in-scroll">
+                    <div class="ind-icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none"
+                            stroke="var(--navy)" stroke-width="1.6" stroke-linecap="round">
+                            <path d="M12 22c-4-4-8-8-8-12a8 8 0 0116 0c0 4-4 8-8 12z" />
+                            <path d="M12 2v8M8 6c2 2 6 2 8 0" />
+                            <circle cx="12" cy="12" r="1" fill="var(--navy)" />
+                        </svg></div>
+                    <span>Agriculture &amp; Horticulture</span>
+                </div>
             </div>
-          </div>
-          <div class="contact-info-item">
-            <div class="ci-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--navy)"
-                stroke-width="1.8" stroke-linecap="round">
-                <path
-                  d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6A19.79 19.79 0 012.12 4.18 2 2 0 014.11 2h3a2 2 0 012 1.72c.13.81.36 1.6.68 2.35a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.75.32 1.54.55 2.35.68A2 2 0 0122 16.92z" />
-              </svg></div>
-            <div>
-              <h4>Phone</h4><a href="tel:+919019860719">+91 9019860719</a><br><a href="tel:+919483738783">+91
-                9483738783</a>
-            </div>
-          </div>
-          <div class="contact-info-item">
-            <div class="ci-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--navy)"
-                stroke-width="1.8" stroke-linecap="round">
-                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z" />
-                <circle cx="12" cy="10" r="3" />
-              </svg></div>
-            <div>
-              <h4>Location</h4>
-              <p>Yukti.AI Solutions<br />Shivamogga - The Gateway to Malnad<br />577204</p>
-            </div>
-          </div>
         </div>
-        <div class="contact-form-card">
-          <h3>Get a Free Consultation</h3>
-          <p>Let's discuss how we can help transform your business</p>
-          <form id="contactForm" class="contact-form" onsubmit="handleFormSubmit(event)">
-            <div class="form-group floating-label"><input type="text" id="name" name="name" placeholder=" "
-                required /><label for="name">Name</label></div>
-            <div class="form-group floating-label"><input type="email" id="email" name="email" placeholder=" "
-                required /><label for="email">Email</label></div>
-            <div class="form-group floating-label"><input type="tel" id="phone" name="phone" placeholder=" " /><label
-                for="phone">Contact Number</label></div>
-            <div class="form-group floating-label"><textarea id="message" name="message" rows="4"
-                placeholder=" "></textarea><label for="message">Message</label></div>
-            <button type="submit" class="btn-submit ripple-btn" id="submitBtn"><span class="btn-text">Send
-                Message</span><span class="btn-loading" style="display:none;">Sending...</span></button>
-            <div id="formSuccess" class="form-success" style="display:none;">Thank you! We'll get back to you soon.
+    </section>
+
+    <!-- USE CASES -->
+    <section class="usecases-section section" id="usecases">
+        <div class="container">
+            <p class="section-tag">USE CASES</p>
+            <h2 class="section-title">See it in action</h2>
+            <p class="section-subtitle">Real-world applications of our AI solutions</p>
+            <div class="usecases-tabs">
+                <button class="tab-btn active ripple-btn" data-tab="rec">AI Recommendation</button>
+                <button class="tab-btn ripple-btn" data-tab="crm">CRM Workflows</button>
+                <button class="tab-btn ripple-btn" data-tab="erp">Smart ERP</button>
+                <button class="tab-btn ripple-btn" data-tab="bi">BI Dashboards</button>
             </div>
-          </form>
+            <div class="usecase-display">
+                <div class="usecase-panel active" id="tab-rec">
+                    <div class="usecase-visual orange-grad">
+                        <svg width="64" height="64" viewBox="0 0 48 48" fill="none" stroke="white" stroke-width="2"
+                            stroke-linecap="round">
+                            <circle cx="24" cy="24" r="18" />
+                            <circle cx="24" cy="24" r="12" />
+                            <circle cx="24" cy="24" r="6" />
+                            <circle cx="24" cy="24" r="2" fill="white" />
+                            <line x1="24" y1="6" x2="24" y2="2" />
+                            <line x1="24" y1="46" x2="24" y2="42" />
+                            <line x1="6" y1="24" x2="2" y2="24" />
+                            <line x1="46" y1="24" x2="42" y2="24" />
+                        </svg>
+                    </div>
+                    <div class="usecase-info"><span class="uc-live">&#9679; LIVE</span>
+                        <h3>AI-driven Recommendation Engines</h3>
+                        <p>Boost sales and engagement with personalized product recommendations powered by machine
+                            learning. Our
+                            recommendation engines analyze user behavior, purchase patterns, and preferences to deliver
+                            hyper-personalized experiences that drive conversion and retention.</p><a href="#contact"
+                            class="btn-primary ripple-btn mt-12">Know More &#8594;</a>
+                    </div>
+                </div>
+                <div class="usecase-panel" id="tab-crm">
+                    <div class="usecase-visual purple-grad">
+                        <svg width="64" height="64" viewBox="0 0 48 48" fill="none" stroke="white" stroke-width="2"
+                            stroke-linecap="round">
+                            <circle cx="16" cy="16" r="6" />
+                            <circle cx="32" cy="16" r="6" />
+                            <circle cx="24" cy="32" r="6" />
+                            <line x1="20" y1="20" x2="22" y2="28" />
+                            <line x1="28" y1="20" x2="26" y2="28" />
+                            <line x1="22" y1="16" x2="26" y2="16" />
+                        </svg>
+                    </div>
+                    <div class="usecase-info"><span class="uc-live">&#9679; LIVE</span>
+                        <h3>Automated CRM Workflows</h3>
+                        <p>Streamline customer management with predictive analytics and intelligent automation. Our CRM
+                            workflows
+                            automatically score leads, schedule follow-ups, and surface the right customer data at the
+                            right time.</p>
+                        <a href="#contact" class="btn-primary ripple-btn mt-12">Know More &#8594;</a>
+                    </div>
+                </div>
+                <div class="usecase-panel" id="tab-erp">
+                    <div class="usecase-visual blue-grad">
+                        <svg width="64" height="64" viewBox="0 0 48 48" fill="none" stroke="white" stroke-width="2"
+                            stroke-linecap="round">
+                            <rect x="8" y="8" width="32" height="32" rx="4" />
+                            <line x1="8" y1="16" x2="40" y2="16" />
+                            <line x1="8" y1="24" x2="40" y2="24" />
+                            <line x1="8" y1="32" x2="40" y2="32" />
+                            <line x1="20" y1="8" x2="20" y2="40" />
+                            <line x1="32" y1="8" x2="32" y2="40" />
+                        </svg>
+                    </div>
+                    <div class="usecase-info"><span class="uc-live">&#9679; LIVE</span>
+                        <h3>Smart ERP Systems</h3>
+                        <p>Optimize operations with decision intelligence built into every workflow. Our ERP systems
+                            streamline your
+                            entire business process providing real-time insights and automation that reduces manual work
+                            by up to 70%.
+                        </p><a href="#contact" class="btn-primary ripple-btn mt-12">Know More &#8594;</a>
+                    </div>
+                </div>
+                <div class="usecase-panel" id="tab-bi">
+                    <div class="usecase-visual teal-grad">
+                        <svg width="64" height="64" viewBox="0 0 48 48" fill="none" stroke="white" stroke-width="2"
+                            stroke-linecap="round">
+                            <rect x="6" y="28" width="8" height="14" rx="1" fill="rgba(255,255,255,0.2)" />
+                            <rect x="20" y="18" width="8" height="24" rx="1" fill="rgba(255,255,255,0.2)" />
+                            <rect x="34" y="8" width="8" height="34" rx="1" fill="rgba(255,255,255,0.2)" />
+                            <polyline points="6 22 20 12 34 6 46 2" stroke-width="2.5" />
+                            <circle cx="6" cy="22" r="2" fill="white" />
+                            <circle cx="20" cy="12" r="2" fill="white" />
+                            <circle cx="34" cy="6" r="2" fill="white" />
+                        </svg>
+                    </div>
+                    <div class="usecase-info"><span class="uc-live">&#9679; LIVE</span>
+                        <h3>Business Intelligence Dashboards</h3>
+                        <p>Transform data into actionable insights with beautiful real-time dashboards. Track KPIs,
+                            monitor
+                            operations, and make data-driven decisions with custom analytics solutions built for your
+                            business.</p><a href="#contact" class="btn-primary ripple-btn mt-12">Know More &#8594;</a>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- FOOTER -->
-  <footer class="footer">
-    <div class="footer-bg"></div>
-    <div class="container footer-inner">
-      <div class="footer-brand">
-        <a href="#home" class="nav-logo footer-logo">
-          <div class="logo-icon small"><svg viewBox="0 0 48 48" fill="none" width="28" height="28">
-              <polygon points="24,2 46,24 24,46 2,24" fill="url(#footgrad)" /><text x="50%" y="54%"
-                dominant-baseline="middle" text-anchor="middle" font-size="18" fill="white" font-family="serif"
-                font-weight="bold">&#x0950;</text>
-              <defs>
-                <linearGradient id="footgrad" x1="0%" y1="0%" x2="100%" y2="100%">
-                  <stop offset="0%" stop-color="#4f7bbd" />
-                  <stop offset="100%" stop-color="#1a2a6c" />
-                </linearGradient>
-              </defs>
-            </svg></div>
-          <span class="logo-text">Yukti.AI</span>
-        </a>
-        <p>Empowering businesses with intelligent, scalable, and future-ready solutions.</p>
-        <div class="footer-socials">
-          <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn" class="social-link"><svg width="18"
-              height="18" viewBox="0 0 24 24" fill="currentColor">
-              <path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-4 0v7h-4v-7a6 6 0 016-6z" />
-              <rect x="2" y="9" width="4" height="12" />
-              <circle cx="4" cy="4" r="2" />
-            </svg></a>
-          <a href="https://github.com/YuktiAI" target="_blank" aria-label="GitHub" class="social-link"><svg width="18"
-              height="18" viewBox="0 0 24 24" fill="currentColor">
-              <path
-                d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22" />
-            </svg></a>
-          <a href="https://x.com" target="_blank" aria-label="X" class="social-link"><svg width="18" height="18"
-              viewBox="0 0 24 24" fill="currentColor">
-              <path
-                d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
-            </svg></a>
+    <!-- TECH EXPERTISE -->
+    <section class="tech-section section" id="tech">
+        <div class="container">
+            <p class="section-tag">TECHNOLOGY EXPERTISE</p>
+            <h2 class="section-title">Cutting-edge technologies<br />powering your solutions</h2>
+            <div class="tech-grid">
+                <div class="tech-card fade-in-scroll">
+                    <div class="tech-card-icon"><svg width="36" height="36" viewBox="0 0 24 24" fill="none"
+                            stroke="var(--navy)" stroke-width="1.5" stroke-linecap="round">
+                            <circle cx="6" cy="6" r="2" />
+                            <circle cx="18" cy="6" r="2" />
+                            <circle cx="6" cy="18" r="2" />
+                            <circle cx="18" cy="18" r="2" />
+                            <circle cx="12" cy="12" r="3" fill="rgba(79,123,189,0.15)" />
+                            <line x1="8" y1="6" x2="10" y2="10" />
+                            <line x1="14" y1="10" x2="16" y2="6" />
+                            <line x1="8" y1="18" x2="10" y2="14" />
+                            <line x1="14" y1="14" x2="16" y2="18" />
+                        </svg></div>
+                    <h3>AI &amp; ML</h3>
+                    <div class="tech-tags">
+                        <span>Python</span><span>TensorFlow</span><span>PyTorch</span><span>Scikit-learn</span>
+                    </div>
+                </div>
+                <div class="tech-card fade-in-scroll">
+                    <div class="tech-card-icon"><svg width="36" height="36" viewBox="0 0 24 24" fill="none"
+                            stroke="var(--navy)" stroke-width="1.5" stroke-linecap="round">
+                            <circle cx="12" cy="12" r="10" />
+                            <path d="M2 12h20" />
+                            <path d="M12 2a15 15 0 014 20M12 2a15 15 0 00-4 20" />
+                        </svg></div>
+                    <h3>Web Stack</h3>
+                    <div class="tech-tags">
+                        <span>React</span><span>Node.js</span><span>Django</span><span>Flask</span><span>Next.js</span>
+                    </div>
+                </div>
+                <div class="tech-card fade-in-scroll">
+                    <div class="tech-card-icon"><svg width="36" height="36" viewBox="0 0 24 24" fill="none"
+                            stroke="var(--navy)" stroke-width="1.5" stroke-linecap="round">
+                            <path d="M18 10h-1.26A8 8 0 109 20h9a5 5 0 000-10z" fill="rgba(79,123,189,0.1)" />
+                            <path d="M12 13v5M10 16l2 2 2-2" />
+                        </svg></div>
+                    <h3>Cloud &amp; DevOps</h3>
+                    <div class="tech-tags">
+                        <span>AWS</span><span>GCP</span><span>Azure</span><span>Docker</span><span>Kubernetes</span>
+                    </div>
+                </div>
+                <div class="tech-card fade-in-scroll">
+                    <div class="tech-card-icon"><svg width="36" height="36" viewBox="0 0 24 24" fill="none"
+                            stroke="var(--navy)" stroke-width="1.5" stroke-linecap="round">
+                            <ellipse cx="12" cy="6" rx="8" ry="3" />
+                            <path d="M4 6v6c0 1.66 3.58 3 8 3s8-1.34 8-3V6" />
+                            <path d="M4 12v6c0 1.66 3.58 3 8 3s8-1.34 8-3v-6" />
+                        </svg></div>
+                    <h3>Databases</h3>
+                    <div class="tech-tags">
+                        <span>PostgreSQL</span><span>MongoDB</span><span>Firebase</span><span>Redis</span>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-      <div class="footer-col">
-        <h4>Services</h4>
-        <ul>
-          <li><a href="#services">ERP Development</a></li>
-          <li><a href="#services">CRM Development</a></li>
-          <li><a href="#services">AI Agent Development</a></li>
-          <li><a href="#services">Web Development</a></li>
-          <li><a href="#services">E-Commerce Systems</a></li>
-        </ul>
-      </div>
-      <div class="footer-col">
-        <h4>Company</h4>
-        <ul>
-          <li><a href="#why">About Us</a></li>
-          <li><a href="#team">Our Team</a></li>
-          <li><a href="#usecases">Use Cases</a></li>
-          <li><a href="#industries">Industries</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </div>
-      <div class="footer-col">
-        <h4>Contact</h4>
-        <ul>
-          <li><a href="mailto:yuktiaisolutions@gmail.com">yuktiaisolutions@gmail.com</a></li>
-          <li><a href="tel:+919019860719">+91 9019860719</a></li>
-          <li><a href="tel:+919483738783">+91 9483738783</a></li>
-          <li>Shivamogga, Karnataka</li>
-          <li>577204</li>
-        </ul>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <p>&copy; 2025 Yukti.AI | All Rights Reserved</p>
-    </div>
-  </footer>
+    </section>
 
-  <!-- MODALS -->
-  <div class="modal-overlay" id="modalOverlay">
-    <div class="modal-box" id="modalBox">
-      <button class="modal-close" id="modalClose">&times;</button>
-      <h2 id="modalTitle"></h2>
-      <p id="modalDesc"></p>
-      <a href="#contact" class="btn-primary ripple-btn" onclick="closeModal()">Get Started &#8594;</a>
+    <!-- TEAM -->
+    <section class="team-section section" id="team">
+        <div class="container">
+            <p class="section-tag">OUR TEAM</p>
+            <h2 class="section-title">Led by experienced entrepreneurs<br />and technologists</h2>
+            <div class="team-grid">
+                <div class="team-card fade-in-scroll">
+                    <div class="team-avatar" style="background:linear-gradient(135deg,#6e48aa,#9d50bb);">
+                        <span>MSKNA</span>
+                    </div>
+                    <h3>Mr. SampathKumar N A</h3>
+                    <p class="team-desc">Experienced Engineer and technologist driving Yukti.AI's vision for AI-powered
+                        business
+                        transformation.</p>
+                    <div class="team-socials"><a href="#" aria-label="LinkedIn"><svg width="18" height="18"
+                                viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-4 0v7h-4v-7a6 6 0 016-6z" />
+                                <rect x="2" y="9" width="4" height="12" />
+                                <circle cx="4" cy="4" r="2" />
+                            </svg></a></div>
+                </div>
+                <div class="team-card fade-in-scroll">
+                    <div class="team-avatar" style="background:linear-gradient(135deg,#1a2a6c,#b21f1f);">
+                        <span>MNRH</span>
+                    </div>
+                    <h3>Mr. Nitish R Honnali</h3>
+                    <p class="team-desc">Full-stack AI engineer leading technical architecture and product development
+                        at
+                        Yukti.AI.</p>
+                    <div class="team-socials"><a href="#" aria-label="LinkedIn"><svg width="18" height="18"
+                                viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-4 0v7h-4v-7a6 6 0 016-6z" />
+                                <rect x="2" y="9" width="4" height="12" />
+                                <circle cx="4" cy="4" r="2" />
+                            </svg></a></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="contact-section section" id="contact">
+        <div class="container">
+            <p class="section-tag">CONTACT US</p>
+            <h2 class="section-title">Ready to transform your business?<br />Let's talk</h2>
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <div class="contact-info-item">
+                        <div class="ci-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                stroke="var(--navy)" stroke-width="1.8" stroke-linecap="round">
+                                <rect x="2" y="4" width="20" height="16" rx="2" />
+                                <polyline points="22 4 12 13 2 4" />
+                            </svg></div>
+                        <div>
+                            <h4>Email</h4><a href="mailto:yuktiaisolutions@gmail.com">yuktiaisolutions@gmail.com</a>
+                        </div>
+                    </div>
+                    <div class="contact-info-item">
+                        <div class="ci-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                stroke="var(--navy)" stroke-width="1.8" stroke-linecap="round">
+                                <path
+                                    d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6A19.79 19.79 0 012.12 4.18 2 2 0 014.11 2h3a2 2 0 012 1.72c.13.81.36 1.6.68 2.35a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.75.32 1.54.55 2.35.68A2 2 0 0122 16.92z" />
+                            </svg></div>
+                        <div>
+                            <h4>Phone</h4><a href="tel:+919019860719">+91 9019860719</a><br><a
+                                href="tel:+919483738783">+91
+                                9483738783</a>
+                        </div>
+                    </div>
+                    <div class="contact-info-item">
+                        <div class="ci-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                stroke="var(--navy)" stroke-width="1.8" stroke-linecap="round">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z" />
+                                <circle cx="12" cy="10" r="3" />
+                            </svg></div>
+                        <div>
+                            <h4>Location</h4>
+                            <p>Yukti.AI Solutions<br />Shivamogga - The Gateway to Malnad<br />577204</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form-card">
+                    <h3>Get a Free Consultation</h3>
+                    <p>Let's discuss how we can help transform your business</p>
+                    <form id="contactForm" class="contact-form" onsubmit="handleFormSubmit(event)">
+                        <div class="form-group floating-label"><input type="text" id="name" name="name" placeholder=" "
+                                required /><label for="name">Name</label></div>
+                        <div class="form-group floating-label"><input type="email" id="email" name="email"
+                                placeholder=" " required /><label for="email">Email</label></div>
+                        <div class="form-group floating-label"><input type="tel" id="phone" name="phone"
+                                placeholder=" " /><label for="phone">Contact Number</label></div>
+                        <div class="form-group floating-label"><textarea id="message" name="message" rows="4"
+                                placeholder=" "></textarea><label for="message">Message</label></div>
+                        <button type="submit" class="btn-submit ripple-btn" id="submitBtn"><span class="btn-text">Send
+                                Message</span><span class="btn-loading" style="display:none;">Sending...</span></button>
+                        <div id="formSuccess" class="form-success" style="display:none;">Thank you! We'll get back to
+                            you soon.
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-bg"></div>
+        <div class="container footer-inner">
+            <div class="footer-brand">
+                <a href="#home" class="nav-logo footer-logo">
+                    <div class="logo-icon small"><svg viewBox="0 0 48 48" fill="none" width="28" height="28">
+                            <polygon points="24,2 46,24 24,46 2,24" fill="url(#footgrad)" /><text x="50%" y="54%"
+                                dominant-baseline="middle" text-anchor="middle" font-size="18" fill="white"
+                                font-family="serif" font-weight="bold">&#x0950;</text>
+                            <defs>
+                                <linearGradient id="footgrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" stop-color="#4f7bbd" />
+                                    <stop offset="100%" stop-color="#1a2a6c" />
+                                </linearGradient>
+                            </defs>
+                        </svg></div>
+                    <span class="logo-text">Yukti.AI</span>
+                </a>
+                <p>Empowering businesses with intelligent, scalable, and future-ready solutions.</p>
+                <div class="footer-socials">
+                    <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn" class="social-link"><svg
+                            width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-4 0v7h-4v-7a6 6 0 016-6z" />
+                            <rect x="2" y="9" width="4" height="12" />
+                            <circle cx="4" cy="4" r="2" />
+                        </svg></a>
+                    <a href="https://github.com/YuktiAI" target="_blank" aria-label="GitHub" class="social-link"><svg
+                            width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22" />
+                        </svg></a>
+                    <a href="https://x.com" target="_blank" aria-label="X" class="social-link"><svg width="18"
+                            height="18" viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+                        </svg></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>Services</h4>
+                <ul>
+                    <li><a href="#services">ERP Development</a></li>
+                    <li><a href="#services">CRM Development</a></li>
+                    <li><a href="#services">AI Agent Development</a></li>
+                    <li><a href="#services">Web Development</a></li>
+                    <li><a href="#services">E-Commerce Systems</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Company</h4>
+                <ul>
+                    <li><a href="#why">About Us</a></li>
+                    <li><a href="#team">Our Team</a></li>
+                    <li><a href="#usecases">Use Cases</a></li>
+                    <li><a href="#industries">Industries</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Contact</h4>
+                <ul>
+                    <li><a href="mailto:yuktiaisolutions@gmail.com">yuktiaisolutions@gmail.com</a></li>
+                    <li><a href="tel:+919019860719">+91 9019860719</a></li>
+                    <li><a href="tel:+919483738783">+91 9483738783</a></li>
+                    <li>Shivamogga, Karnataka</li>
+                    <li>577204</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Yukti.AI | All Rights Reserved</p>
+        </div>
+    </footer>
+
+    <!-- MODALS -->
+    <div class="modal-overlay" id="modalOverlay">
+        <div class="modal-box" id="modalBox">
+            <button class="modal-close" id="modalClose">&times;</button>
+            <h2 id="modalTitle"></h2>
+            <p id="modalDesc"></p>
+            <a href="#contact" class="btn-primary ripple-btn" onclick="closeModal()">Get Started &#8594;</a>
+        </div>
     </div>
-  </div>
 
-  <button class="back-to-top" id="backToTop" aria-label="Back to top">&#8593;</button>
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">&#8593;</button>
 
-  <script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>
