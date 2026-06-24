@@ -73,8 +73,8 @@ document.querySelectorAll('.service-card').forEach(card => {
 });
 document.querySelectorAll('.learn-more-btn').forEach(btn => {
   btn.addEventListener('click', e => {
-    e.stopPropagation();
-    openModal(btn.closest('.service-card').getAttribute('data-modal'));
+    e.stopPropagation(); // prevent the card click from opening the modal
+    // anchor href="#contact" handles navigation
   });
 });
 document.getElementById('modalClose').addEventListener('click', closeModal);

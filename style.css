@@ -639,6 +639,20 @@ a {
   box-shadow: var(--shadow-sm)
 }
 
+.trust-separator {
+  background: transparent;
+  border-color: transparent;
+  font-size: 1.1rem;
+  padding: 0 4px;
+  pointer-events: none
+}
+.trust-separator:hover {
+  background: transparent;
+  border-color: transparent;
+  transform: none;
+  box-shadow: none
+}
+
 /* ============================================================ WHY */
 .why-section {
   background: var(--soft-lav)
