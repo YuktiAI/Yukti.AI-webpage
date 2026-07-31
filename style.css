@@ -1,4 +1,4 @@
-﻿/* ============================================================
+/* ============================================================
    YUKTII AI LABS — CUSTOM DESIGN & STYLING SYSTEM
    ============================================================ */
 
@@ -682,3 +682,345 @@ footer a[aria-label]:focus-visible .material-symbols-outlined {
         margin-left: 12px;
     }
 }
+
+/* ========================================================
+   M1.2 — ENGINEERING DELIVERY TIMELINE (9 STAGES)
+======================================================== */
+.timeline-stage {
+    position: relative;
+    padding-left: 0;
+}
+@media (min-width: 1024px) {
+    .timeline-stage {
+        padding-left: 72px;
+    }
+}
+.timeline-node {
+    display: none;
+}
+@media (min-width: 1024px) {
+    .timeline-node {
+        display: flex;
+        position: absolute;
+        left: 0;
+        top: 24px;
+        width: 56px;
+        height: 56px;
+        align-items: center;
+        justify-content: center;
+        background: #131313;
+        border: 1px solid rgba(255, 59, 59, 0.25);
+        z-index: 10;
+        transition: border-color 200ms ease, background 200ms ease;
+    }
+    .timeline-stage:hover .timeline-node {
+        border-color: #ff3b3b;
+        background: rgba(255, 59, 59, 0.08);
+    }
+}
+.timeline-content {
+    background: #1c1b1b;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    padding: 28px;
+    transition: transform 200ms ease-out, box-shadow 200ms ease-out, border-color 200ms ease-out;
+}
+.timeline-phase-tag {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: #787878;
+    background: rgba(255, 255, 255, 0.04);
+    padding: 2px 8px;
+    border: 1px solid rgba(255, 255, 255, 0.06);
+}
+.timeline-phase-tag-ongoing {
+    color: #ff3b3b;
+    background: rgba(255, 59, 59, 0.08);
+    border-color: rgba(255, 59, 59, 0.25);
+}
+
+/* ========================================================
+   M1.3 — TECH TAGS
+======================================================== */
+.tech-tag {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    text-transform: uppercase;
+    color: #e5e2e1;
+    opacity: 0.75;
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    padding: 4px 10px;
+    transition: all 160ms ease;
+    cursor: default;
+}
+.tech-tag:hover {
+    opacity: 1;
+    border-color: rgba(255, 59, 59, 0.5);
+    background: rgba(255, 59, 59, 0.06);
+    color: #ffffff;
+}
+
+/* ========================================================
+   M2.1 — INSIGHTS & RESOURCES BADGES
+======================================================== */
+.insight-category-tag {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: #ff3b3b;
+    background: rgba(255, 59, 59, 0.08);
+    border: 1px solid rgba(255, 59, 59, 0.2);
+    padding: 3px 10px;
+}
+.insight-status-badge {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: #787878;
+    background: rgba(255, 255, 255, 0.04);
+    padding: 2px 8px;
+    border: 1px solid rgba(255, 255, 255, 0.06);
+}
+.resource-type-tag {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: #e5e2e1;
+    opacity: 0.8;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 3px 10px;
+}
+
+/* ========================================================
+   M2.3 — ENTERPRISE FAQ ACCORDION
+======================================================== */
+.faq-item {
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    background: #1c1b1b;
+    margin-bottom: 12px;
+    transition: border-color 200ms ease;
+}
+.faq-item:hover {
+    border-color: rgba(255, 59, 59, 0.3);
+}
+.faq-trigger {
+    width: 100%;
+    padding: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    text-align: left;
+
+}
+.faq-icon {
+    transition: transform 240ms ease;
+    flex-shrink: 0;
+}
+.faq-trigger[aria-expanded="true"] .faq-icon {
+    transform: rotate(45deg);
+}
+.faq-body {
+    display: none;
+    padding: 0 24px 24px 24px;
+    border-top: 1px solid rgba(255, 255, 255, 0.04);
+    margin-top: 4px;
+}
+.faq-body.faq-open {
+    display: block;
+}
+
+/* ========================================================
+   M4.1 — SVG ARCHITECTURE DIAGRAM STYLES
+======================================================== */
+.arch-node {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 14px;
+    background: #131313;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 0;
+}
+.arch-node-primary {
+    border-color: rgba(255, 59, 59, 0.4);
+    background: rgba(255, 59, 59, 0.06);
+}
+.arch-node-secondary {
+    border-color: rgba(255, 255, 255, 0.1);
+    background: #1c1b1b;
+}
+.arch-node-label {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: #e5e2e1;
+}
+.arch-line-v {
+    width: 1px;
+    height: 16px;
+    background: rgba(255, 59, 59, 0.3);
+}
+.arch-line-h {
+    height: 1px;
+    background: rgba(255, 59, 59, 0.2);
+}
+
+/* ========================================================
+   BUTTONS & LINKS PARITY
+======================================================== */
+.btn-primary,
+.btn-secondary,
+.btn-outline-red {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    padding: 14px 24px;
+    transition: all 200ms ease;
+    text-decoration: none;
+    cursor: pointer;
+
+}
+.btn-primary {
+    background: #ff3b3b;
+    color: #ffffff;
+    border: 1px solid #ff3b3b;
+}
+.btn-primary:hover,
+.btn-primary:focus-visible {
+    background: #e02e2e;
+    border-color: #e02e2e;
+    box-shadow: 0 8px 24px rgba(255, 59, 59, 0.35);
+}
+.btn-secondary {
+    background: transparent;
+    color: #e5e2e1;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+.btn-secondary:hover,
+.btn-secondary:focus-visible {
+    border-color: #ff3b3b;
+    color: #ffffff;
+    background: rgba(255, 59, 59, 0.05);
+}
+.btn-outline-red {
+    background: transparent;
+    color: #ff3b3b;
+    border: 1px solid rgba(255, 59, 59, 0.3);
+}
+.btn-outline-red:hover,
+.btn-outline-red:focus-visible {
+    background: rgba(255, 59, 59, 0.1);
+    border-color: #ff3b3b;
+}
+
+/* ========================================================
+   INFINITE MARQUEE SLIDER (TECH STACK)
+======================================================== */
+.marquee-wrapper {
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    user-select: none;
+    padding: 12px 0;
+}
+
+.marquee-track {
+    display: flex;
+    gap: 16px;
+    width: max-content;
+    animation: marquee-scroll 85s linear infinite;
+    will-change: transform;
+}
+
+.marquee-wrapper:hover .marquee-track {
+    animation-play-state: paused;
+}
+
+@keyframes marquee-scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+.marquee-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 20px;
+    background: #1c1b1b;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    white-space: nowrap;
+    transition: border-color 200ms ease, background 200ms ease, transform 200ms ease;
+    flex-shrink: 0;
+}
+
+.marquee-item span:first-child {
+    color: #ff3b3b;
+    font-size: 20px;
+}
+
+.marquee-item span:last-child {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: 0.04em;
+    color: #e5e2e1;
+    text-transform: uppercase;
+}
+
+.marquee-item:hover {
+    border-color: rgba(255, 59, 59, 0.4);
+    background: rgba(255, 59, 59, 0.06);
+    transform: translateY(-2px);
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .marquee-track {
+        animation: none;
+        overflow-x: auto;
+    }
+}
+
+/* ========================================================
+   AUTOFILL DARK THEME OVERRIDE
+======================================================== */
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+textarea:-webkit-autofill:active,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus,
+select:-webkit-autofill:active {
+    -webkit-text-fill-color: #e5e2e1 !important;
+    -webkit-box-shadow: 0 0 0px 1000px #0e0e0e inset !important;
+    transition: background-color 5000s ease-in-out 0s !important;
+    background-color: #0e0e0e !important;
+    caret-color: #ff3b3b !important;
+}
+
+
+

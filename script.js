@@ -1,4 +1,4 @@
-﻿(function () {
+(function () {
     'use strict';
 
     // ── Smooth scroll (with header offset) ───────────────────
@@ -324,6 +324,37 @@
                 inner.style.setProperty('--ry', '0deg');
                 setTimeout(() => { inner.style.willChange = ''; }, 400);
             });
+        });
+    }
+
+    // ── FAQ Accordion Toggle ─────────────────────────────────
+    const faqTriggers = document.querySelectorAll('.faq-trigger');
+    faqTriggers.forEach(trigger => {
+        trigger.addEventListener('click', () => {
+            const isExpanded = trigger.getAttribute('aria-expanded') === 'true';
+            const bodyId = trigger.getAttribute('aria-controls');
+            const bodyEl = document.getElementById(bodyId);
+
+            // Close all open FAQs for clean accordion experience
+            faqTriggers.forEach(otherTrigger => {
+                otherTrigger.setAttribute('aria-expanded', 'false');
+                const otherBodyId = otherTrigger.getAttribute('aria-controls');
+                const otherBodyEl = document.getElementById(otherBodyId);
+                if (otherBodyEl) otherBodyEl.classList.remove('faq-open');
+            });
+
+            if (!isExpanded && bodyEl) {
+                trigger.setAttribute('aria-expanded', 'true');
+                bodyEl.classList.add('faq-open');
+            }
+        });
+    });
+
+    // ── Back to Top Button ────────────────────────────────────
+    const backToTopBtn = document.getElementById('back-to-top');
+    if (backToTopBtn) {
+        backToTopBtn.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
         });
     }
 

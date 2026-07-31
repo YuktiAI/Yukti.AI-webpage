@@ -1,37 +1,48 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
   <!-- Homepage -->
   <url>
     <loc>https://www.yuktiiai.in/</loc>
-    <lastmod>2026-07-27</lastmod>
-    <changefreq>monthly</changefreq>
+    <lastmod>2026-07-31</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
 
-  <!-- Add more entries here as you add pages/routes, e.g.: -->
-
-  <!-- 
+  <!-- Legal Pages -->
   <url>
-    <loc>https://www.yuktiiai.in/services</loc>
-    <lastmod>2026-07-27</lastmod>
+    <loc>https://www.yuktiiai.in/privacy.html</loc>
+    <lastmod>2026-07-31</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.3</priority>
   </url>
 
   <url>
-    <loc>https://www.yuktiiai.in/about</loc>
-    <lastmod>2026-07-27</lastmod>
+    <loc>https://www.yuktiiai.in/terms.html</loc>
+    <lastmod>2026-07-31</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.3</priority>
   </url>
 
   <url>
-    <loc>https://www.yuktiiai.in/contact</loc>
-    <lastmod>2026-07-27</lastmod>
+    <loc>https://www.yuktiiai.in/cookie.html</loc>
+    <lastmod>2026-07-31</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.2</priority>
   </url>
-  -->
+
+  <url>
+    <loc>https://www.yuktiiai.in/accessibility.html</loc>
+    <lastmod>2026-07-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.3</priority>
+  </url>
+
+  <url>
+    <loc>https://www.yuktiiai.in/disclaimer.html</loc>
+    <lastmod>2026-07-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.2</priority>
+  </url>
 
 </urlset>

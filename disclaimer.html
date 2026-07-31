@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html class="dark" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Disclaimer — YUKTII AI LABS</title>
+    <meta name="description" content="Disclaimer for YUKTII AI LABS website and published technical materials." />
+    <meta name="robots" content="index, follow" />
+    <link rel="icon" type="image/png" href="favicon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&amp;family=JetBrains+Mono:wght@400;500;700&amp;display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=block" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "primary": "#ff3b3b",
+                        "on-primary": "#ffffff",
+                        "background": "#131313",
+                        "surface": "#131313",
+                        "surface-container-lowest": "#0e0e0e",
+                        "surface-container-low": "#1c1b1b",
+                        "surface-container": "#201f1f",
+                        "on-surface": "#e5e2e1",
+                        "neon-red": "#ff3b3b",
+                        "muted-gray": "#787878"
+                    },
+                    "fontFamily": {
+                        "body-md": ["Montserrat", "sans-serif"],
+                        "headline-lg": ["Montserrat", "sans-serif"],
+                        "label-mono": ["JetBrains Mono", "monospace"]
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+</head>
+
+<body class="font-body-md bg-background text-on-surface">
+
+    <header id="site-header" class="fixed top-0 w-full z-50 bg-background/92 backdrop-blur-xl border-b border-white/5">
+        <div class="max-w-[1280px] mx-auto px-5 lg:px-16 flex justify-between items-center h-20">
+            <a href="index.html" class="flex items-center gap-3">
+                <img alt="YUKTII AI LABS Logo" class="h-9 w-auto" width="36" height="36" src="yukti-logo1.png" onerror="this.style.display='none'" />
+                <span class="font-headline-lg text-xl font-black tracking-tighter uppercase text-on-surface">YUKTII AI<span class="text-neon-red"> LABS</span></span>
+            </a>
+            <a href="index.html" class="btn-secondary text-xs">Return to Home <span class="material-symbols-outlined" style="font-size:16px">arrow_back</span></a>
+        </div>
+    </header>
+
+    <main class="pt-32 pb-24">
+        <div class="max-w-[900px] mx-auto px-5">
+            <div class="mb-12 border-b border-white/10 pb-8">
+                <span class="font-label-mono text-xs text-neon-red uppercase tracking-widest block mb-3">Legal &amp; Advisory</span>
+                <h1 class="font-headline-lg text-3xl md:text-4xl font-black uppercase mb-4">Disclaimer</h1>
+                <p class="font-label-mono text-xs text-muted-gray">Last Updated: July 31, 2026</p>
+            </div>
+
+            <div class="space-y-8 font-body-md text-sm text-on-surface/75 leading-relaxed">
+                <section>
+                    <h2 class="font-headline-lg text-lg font-black uppercase text-on-surface mb-3">1. Website Information</h2>
+                    <p>The information contained on this website is provided by YUKTII AI LABS for general informational and educational purposes only. While we endeavor to keep information accurate and up to date, we make no representations or warranties of any kind regarding completeness or suitability.</p>
+                </section>
+
+                <section>
+                    <h2 class="font-headline-lg text-lg font-black uppercase text-on-surface mb-3">2. No Legal or Financial Advice</h2>
+                    <p>Technical whitepapers, guides, frameworks, and architecture articles published on this site do not constitute formal legal, compliance, or financial advice. Readers should seek professional counsel for their specific operational and legal requirements.</p>
+                </section>
+
+                <section>
+                    <h2 class="font-headline-lg text-lg font-black uppercase text-on-surface mb-3">3. External Links</h2>
+                    <p>This website may contain links to external third-party sites or community channels (such as WhatsApp, GitHub, or LinkedIn). YUKTII AI LABS has no control over the content or privacy practices of external sites.</p>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <footer class="w-full py-12 border-t border-white/5 bg-surface-container-lowest text-center">
+        <p class="font-label-mono text-xs text-on-surface/40 uppercase tracking-widest">© 2026 YUKTII AI LABS. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

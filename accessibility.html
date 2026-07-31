@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html class="dark" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Accessibility Statement — YUKTII AI LABS</title>
+    <meta name="description" content="Accessibility Statement for YUKTII AI LABS. WCAG 2.1 AA commitment, keyboard navigation, and inclusive design standards." />
+    <meta name="robots" content="index, follow" />
+    <link rel="icon" type="image/png" href="favicon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&amp;family=JetBrains+Mono:wght@400;500;700&amp;display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=block" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "primary": "#ff3b3b",
+                        "on-primary": "#ffffff",
+                        "background": "#131313",
+                        "surface": "#131313",
+                        "surface-container-lowest": "#0e0e0e",
+                        "surface-container-low": "#1c1b1b",
+                        "surface-container": "#201f1f",
+                        "on-surface": "#e5e2e1",
+                        "neon-red": "#ff3b3b",
+                        "muted-gray": "#787878"
+                    },
+                    "fontFamily": {
+                        "body-md": ["Montserrat", "sans-serif"],
+                        "headline-lg": ["Montserrat", "sans-serif"],
+                        "label-mono": ["JetBrains Mono", "monospace"]
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+</head>
+
+<body class="font-body-md bg-background text-on-surface">
+
+    <header id="site-header" class="fixed top-0 w-full z-50 bg-background/92 backdrop-blur-xl border-b border-white/5">
+        <div class="max-w-[1280px] mx-auto px-5 lg:px-16 flex justify-between items-center h-20">
+            <a href="index.html" class="flex items-center gap-3">
+                <img alt="YUKTII AI LABS Logo" class="h-9 w-auto" width="36" height="36" src="yukti-logo1.png" onerror="this.style.display='none'" />
+                <span class="font-headline-lg text-xl font-black tracking-tighter uppercase text-on-surface">YUKTII AI<span class="text-neon-red"> LABS</span></span>
+            </a>
+            <a href="index.html" class="btn-secondary text-xs">Return to Home <span class="material-symbols-outlined" style="font-size:16px">arrow_back</span></a>
+        </div>
+    </header>
+
+    <main class="pt-32 pb-24">
+        <div class="max-w-[900px] mx-auto px-5">
+            <div class="mb-12 border-b border-white/10 pb-8">
+                <span class="font-label-mono text-xs text-neon-red uppercase tracking-widest block mb-3">Inclusive Engineering</span>
+                <h1 class="font-headline-lg text-3xl md:text-headline-xl font-black uppercase mb-4">Accessibility Statement</h1>
+                <p class="font-label-mono text-xs text-muted-gray">Target Standard: WCAG 2.1 Level AA</p>
+            </div>
+
+            <div class="space-y-8 font-body-md text-sm text-on-surface/75 leading-relaxed">
+                <section>
+                    <h2 class="font-headline-lg text-lg font-black uppercase text-on-surface mb-3">1. Our Commitment</h2>
+                    <p>YUKTII AI LABS is committed to ensuring digital accessibility for people of all abilities. We continuously improve the user experience for everyone and apply relevant accessibility standards across our website and software products.</p>
+                </section>
+
+                <section>
+                    <h2 class="font-headline-lg text-lg font-black uppercase text-on-surface mb-3">2. Measures Taken</h2>
+                    <ul class="list-disc pl-5 space-y-2 text-on-surface/65">
+                        <li><strong>Keyboard Navigation:</strong> All interactive elements feature visible focus indicators (`focus-visible`) and logical tab sequence.</li>
+                        <li><strong>Skip Link:</strong> Direct keyboard skip link to bypass main header navigation.</li>
+                        <li><strong>Reduced Motion:</strong> Complete animation disablement when `prefers-reduced-motion: reduce` is set.</li>
+                        <li><strong>Semantic HTML:</strong> Explicit landmark roles, heading hierarchy, and ARIA labels.</li>
+                        <li><strong>Contrast Ratios:</strong> Text elements tuned for high-contrast readability against dark surface containers.</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2 class="font-headline-lg text-lg font-black uppercase text-on-surface mb-3">3. Feedback</h2>
+                    <p>We welcome your feedback on the accessibility of the YUKTII AI LABS website. If you encounter accessibility barriers, please notify us at <a href="mailto:connect@yuktiiai.in" class="text-neon-red hover:underline">connect@yuktiiai.in</a>.</p>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <footer class="w-full py-12 border-t border-white/5 bg-surface-container-lowest text-center">
+        <p class="font-label-mono text-xs text-on-surface/40 uppercase tracking-widest">© 2026 YUKTII AI LABS. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
